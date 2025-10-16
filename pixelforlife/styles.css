@@ -1,0 +1,97 @@
+body {
+    font:14px Arial, Helvetica ,sans-serif;
+    background-color: #eee;
+    width: 900px;
+    margin:100px auto;
+    color: #666;
+}
+
+a { color:#333; }
+
+#nav {
+    margin: 0;
+    padding: 7px 6px 0;
+    background: #2b2b2b;
+    line-height: 100%;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* 🔹 UL sıfırlama şart */
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Ana menü */
+#nav > ul > li {
+    float: left;
+    margin: 0 5px;
+    padding: 0 0 8px;
+    position: relative;
+}
+
+#nav a {
+    font-weight: bold;
+    color: #e7e5e5;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+#nav a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* 🔹 Aktif menü veya hover */
+#nav .current a,
+#nav li:hover > a {
+    background: #ddd;
+    color: #666;
+    border-top: 2px solid #df631f;
+}
+
+/* 🔹 Alt menüler */
+#nav li ul {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    background: #ddd;
+    border: 1px solid #b4b4b4;
+    width: 180px;
+    z-index: 1000;
+}
+
+/* Hover olunca alt menü göster */
+#nav li:hover > ul {
+    display: block;
+}
+
+#nav li ul li {
+    float: none;
+    margin: 0;
+}
+
+#nav li ul a {
+    font-weight: normal;
+    color: #333;
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
+    background: #f2f2f2;
+}
+
+#nav li ul a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* 🔹 2. seviye (nested) menüler */
+#nav li ul ul {
+    top: 0;
+    left: 180px;
+}
