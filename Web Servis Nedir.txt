@@ -1,0 +1,9 @@
+Web servis nedir?
+Web servis HTTP protokolü üzerinden diğer sistemlere/cihazlara hizmet veren yapılardır.X
+
+Web servis uzak sistemler veya farklı platformlar arasında XML,JSON,CSV
+gibi ortak bir biçim kullanarak veri alışverişini sağlar.
+
+Farklı platformlar arasında ortak bir veri alışverişi yapmak içindir.
+
+Mesela appstore da olan bir ürünün Google play da da çok istenebilir bu durumda platformlar arası ortak bir biçimi kullanan web servis yazılıyor.
